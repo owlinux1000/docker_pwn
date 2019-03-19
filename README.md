@@ -1,9 +1,12 @@
 # Docker Image for Pwn
 
-## Useful tools
+## Environment
 
+- `ubuntu`
+- `i386` and `amd64`
 - `gdb`, `gdb-peda` and `Pwngdb`
 - `socat`
+- `rp++`
 
 ## How to use
 
