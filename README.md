@@ -14,7 +14,7 @@
 
 ```
 $ docker build -t pwn:ubuntu1804 .
-$ docker run -it --cap-add=SYS_PTRACE --security-opt="seccomp=unconfined" --name pwn pwn:ubuntu1804 /bin/bash
+$ docker run -it --cap-add=SYS_PTRACE --security-opt="seccomp=unconfined" --name pwn pwn:ubuntu1804
 ```
 
 
