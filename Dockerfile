@@ -15,7 +15,8 @@ RUN git clone https://github.com/scwuaptx/peda ~/peda \
     && mkdir ~/gef && wget https://github.com/hugsy/gef/raw/master/gef.py -O ~/gef/gef.py
 RUN wget https://github.com/0vercl0k/rp/releases/download/v2-beta/rp-lin-x64 -O /usr/local/bin/rp++ && chmod +x /usr/local/bin/rp++
 RUN gem install one_gadget seccomp-tools
+RUN wget https://raw.githubusercontent.com/owlinux1000/pwncat/master/pwncat -O /usr/local/bin/pwncat && chmod +x /usr/local/bin/pwncat
 
-EXPOSE 8888
+EXPOSE 9999
 
 ENTRYPOINT ["/bin/bash"]
