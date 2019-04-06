@@ -28,7 +28,7 @@
 
 ```
 $ docker build -t pwn:ubuntu1804 .
-$ docker run -it -p 9999:8888 --cap-add=SYS_PTRACE --security-opt="seccomp=unconfined" --name pwn pwn:ubuntu1804
+$ docker run -it -p 9999:8888 --cap-add=SYS_PTRACE --security-opt="seccomp=unconfined" --name pwn pwn:19.04
 ```
 
 ## Contributor

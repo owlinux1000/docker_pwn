@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:19.04
 
 #ENV http_proxy $http_proxy
 #ENV https_proxy $http_proxy
@@ -16,6 +16,9 @@ RUN git clone https://github.com/scwuaptx/peda ~/peda \
 RUN wget https://github.com/0vercl0k/rp/releases/download/v2-beta/rp-lin-x64 -O /usr/local/bin/rp++ && chmod +x /usr/local/bin/rp++
 RUN gem install one_gadget seccomp-tools
 RUN wget https://raw.githubusercontent.com/owlinux1000/pwncat/master/pwncat -O /usr/local/bin/pwncat && chmod +x /usr/local/bin/pwncat
+
+RUN mkdir ~/work
+WORKDIR /root/work
 
 EXPOSE 9999
 
