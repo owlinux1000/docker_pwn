@@ -2,8 +2,8 @@
 
 ## Environment
 
-- ubuntu:18.04
-  - So you change `FROM ubuntu:18.04` if you want to use other version
+- ubuntu:19.04
+  - So you change `FROM ubuntu:19.04` if you want to use other version
 
 ## Installed Tools
 
@@ -22,13 +22,13 @@
   - wget
   - curl
   - gcc, g++
-  - socat, netcat
+  - socat, netcat, pwncat
 
 ## How to use
 
 ```
-$ docker build -t pwn:ubuntu1804 .
-$ docker run -it -p 9999:8888 --cap-add=SYS_PTRACE --security-opt="seccomp=unconfined" --name pwn pwn:19.04
+$ docker build -t pwn:19.04 .
+$ docker run -it -v (pwd):/root/work -p 9999:8888 --cap-add=SYS_PTRACE --security-opt="seccomp=unconfined" --name pwn pwn:19.04
 ```
 
 ## Contributor
