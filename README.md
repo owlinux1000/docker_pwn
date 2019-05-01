@@ -26,9 +26,17 @@
 
 ## How to use
 
+
+### Build by yourself
 ```
 $ docker build -t pwn:19.04 .
 $ docker run -it -v (pwd):/root/work -p 9999:8888 --cap-add=SYS_PTRACE --security-opt="seccomp=unconfined" --name pwn pwn:19.04
+```
+
+### Docker pull from Docker Hub
+
+```
+$ docker pull encry1024/pwn:19.04 # 19.04 or 18.04 or 16.04
 ```
 
 ## Contributor
