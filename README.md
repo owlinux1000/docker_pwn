@@ -39,6 +39,12 @@ $ docker run -it -v (pwd):/root/work -p 9999:8888 --cap-add=SYS_PTRACE --securit
 $ docker pull encry1024/pwn:19.04 # 19.04 or 18.04 or 16.04
 ```
 
+### An useful script
+
+```
+$ ./pwn 18.04 # Easy to run this container
+```
+
 ## Contributor
 
 If you want to add some tools and packages, please feel free to pull-request :+1:
