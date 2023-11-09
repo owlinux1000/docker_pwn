@@ -3,7 +3,7 @@
 ## Installed Tools
 
 - Debugger
-  - gdb(gdb-multiarch), gdb-peda and Pwngdb
+  - gdb(gdb-multiarch)
   - [gef](https://github.com/bata24/gef) forked by `bata24`
 - Analysis Tools
   - ltrace, strace
